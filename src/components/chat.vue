@@ -55,7 +55,7 @@
           type="text"
           placeholder="Digite sua mensagem aqui"
         />
-        <button type="submit" class="rounded p-2 mt-2 bg-teal-500 ml-6 text-white hover:bg-teal-600">Enviiar</button>
+        <button type="submit" class="rounded p-2 mt-2 bg-teal-500 ml-6 text-white hover:bg-teal-600">Enviar</button>
       </form>
     </div>
   </body>
