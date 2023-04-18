@@ -29,17 +29,16 @@
           <div class="flex flex-col justify-start">
             <h5 class="ml-2 mb-0 text-sm text-slate-200">Atendente diz:</h5>
             <h4 class="ml-2 border-2 border-solid mt-0 p-2 w-fit text-slate-200">
-              Obrigado por entrar em contato com nossa equipe logo mais, um
-              a!
+              Obrigado por entrar em centato com nossa equipe
             </h4>
-            <h5 class="ml-2 mb-0 text-sm text-slate-200">Atendente diz:</h5>
+            <h5 class="ml-2 mb-0 text-sm text-slate-200 mt-2">Atendente diz:</h5>
             <h4 class="ml-2 border-2 border-solid mt-0 p-2 w-fit text-slate-200">Olá, como posso ajudar você?</h4>
           </div>
           <div class="flex flex-row-reverse">
             <ul class="mx-5 my-4 list-disc">
               <li v-for="item in listOfUserMessages" class="list-none">
                 <div class="flex flex-col items-end">
-                    <h6 class= "text-sm mb-0  text-slate-200">Você diz:</h6>
+                    <h6 class= "text-sm mb-0 mt-2 text-slate-200">Você diz:</h6>
                     <h4 class="ml-2 border-2 border-solid mt-0 p-2 w-fit  text-slate-200">{{ item }}</h4>
                 </div>
               </li>
@@ -47,11 +46,11 @@
           </div>
         </div>
       </div>
-      <form @submit.prevent="addNewUserMessage" method="get">
+      <form @submit.prevent="addNewUserMessage" method="get" class="flex flex-row min-w-full">
         <input
           id="userMessage"
           v-model="userMessage"
-          class="rounded w-160 h-5 mt-4 py-4 placeholder:pl-2 bg-gray-200 text-gray-900 border-2 border-gray-400 "
+          class="rounded w-full h-5 mt-4 py-4 placeholder:pl-2 bg-gray-200 text-gray-900 border-2 border-gray-400 "
           type="text"
           placeholder="Digite sua mensagem aqui"
         />
